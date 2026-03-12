@@ -1,0 +1,64 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Lista do Churras</title><style>body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e8f5e9; /* Verde bem clarinho */color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }        .app-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            width: 320px;
+            border-top: 6px solid #2e7d32;
+        }        h2 { margin-top: 0; color: #2e7d32; text-align: center; }
+        .input-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }        input {
+            flex: 1;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }        button {
+            background-color: #2e7d32;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+        }        button:hover { background-color: #1b5e20; }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            background-color: #f1f8e9;
+            padding: 10px;
+            margin-bottom: 8px;
+            border-radius: 5px;
+            border-left: 4px solid #81c784;
+            font-weight: bold;
+            font-size: 16px;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="app-container">
+            <h2>Churras da Turma 🛒</h2>
+            <div class="input-group">
+                <input type="text" id="produtoInput" placeholder="Ex: Pão de Alho">
+                <button onclick="adicionarNoCarrinho()">+</button>
+            </div>
+            <ul id="listaDeCompras"></ul>
+        </div>
+        <script src="script.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Missão Lollapalooza</title>
+        <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ff007f; /* Rosa choque estilo festival */color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }        .card-festival {
+            background-color: #1a1a1a;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+            width: 320px;
+            text-align: center;
+        }        h2 { margin-top: 0; color: #00e5ff; /* Azul neon */ }
+        p { color: #cccccc; }
+        input {
+            width: 90%;
+            padding: 12px;
+            margin: 15px 0;
+            border: 2px solid #555;
+            border-radius: 6px;
+            font-size: 16px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }        button {
+            background-color: #00e5ff;
+            color: #1a1a1a;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            border-radius: 6px;
+            font-size: 18px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+        button:hover { background-color: #00b3cc; }
+        .resposta {
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 1.4;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="card-festival">
+            <h2>Missão Lolla 🎪</h2>
+            <p>A meia-entrada custa R$ 600,00.</p>
+            <p>Quanto você tem guardado aí?</p>
+            <input type="number" id="granaInput" placeholder="Ex: 450">
+            <button onclick="verificarIngresso()">Verificar Saldo</button>
+            <p id="mensagemFinal" class="resposta"></p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+    </html>
